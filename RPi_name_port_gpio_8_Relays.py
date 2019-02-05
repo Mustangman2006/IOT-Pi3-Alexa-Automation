@@ -38,15 +38,15 @@ class device_handler(debounce_handler):
         #     state = True
         ############# Uncomment this code to revers the relay polarity ############
 
-        if name=="kitchen":
+        if name == "kitchen":
             GPIO.setmode(GPIO.BOARD) ## Use board pin numbering
             GPIO.setup(int(7), GPIO.OUT)   ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(7), state) ## State is true/false
-        elif name =="living room":
+        elif name == "living room":
             GPIO.setmode(GPIO.BOARD) ## Use board pin numbering
             GPIO.setup(int(11), GPIO.OUT)   ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(11), state) ## State is true/false
-        elif name =="office":
+        elif name == "office":
             GPIO.setmode(GPIO.BOARD) ## Use board pin numbering
             GPIO.setup(int(13), GPIO.OUT)   ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(13), state) ## State is true/false
@@ -54,19 +54,19 @@ class device_handler(debounce_handler):
             GPIO.setmode(GPIO.BOARD)  ## Use board pin numbering
             GPIO.setup(int(5), GPIO.OUT)  ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(5), state)  ## State is true/false
-        elif name == "tv":
+        elif name == "garage":
             GPIO.setmode(GPIO.BOARD)  ## Use board pin numbering
             GPIO.setup(int(15), GPIO.OUT)  ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(15), state)  ## State is true/false
-        elif name == "pc":
+        elif name == "bathroom":
             GPIO.setmode(GPIO.BOARD)  ## Use board pin numbering
             GPIO.setup(int(8), GPIO.OUT)  ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(8), state)  ## State is true/false
-        elif name == "xbox":
+        elif name == "bathroom 2":
             GPIO.setmode(GPIO.BOARD)  ## Use board pin numbering
             GPIO.setup(int(12), GPIO.OUT)  ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(12), state)  ## State is true/false
-        elif name == "light":
+        elif name == "stairs":
             GPIO.setmode(GPIO.BOARD)  ## Use board pin numbering
             GPIO.setup(int(10), GPIO.OUT)  ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(10), state)  ## State is true/false
